@@ -1,0 +1,138 @@
+:root {
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: #fff;
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.img__desktop {
+  display: none;
+}
+
+.container {
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.content__container {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--white);
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.category {
+  color:var(--grey);
+  font-size: 0.75rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.heading {
+  color: var(--black);
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+}
+
+.about {
+  color: var(--grey);
+  font-size: 0.875rem;
+  line-height: 160%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.current__price {
+  color: var(--green-500);
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+}
+
+.old__price {
+  color: var(--grey);
+  font-size: 0.813rem;line-height: 120%;
+  text-decoration: line-through;
+}
+
+.cart__icon {
+  max-width: 1.125rem;
+  height: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 110%;
+  background-color: var(--green-500);
+  color: var(--white);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--green-700);
+}
+
+@media (min-width: 600px) {
+  .img__mobile {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .img__desktop {
+    display: block;
+    min-height: 100%;
+  }
+
+  .content__container {
+    max-width: 45%;
+    gap: 2rem;
+  }
+}
