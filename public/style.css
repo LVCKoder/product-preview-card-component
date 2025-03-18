@@ -124,6 +124,10 @@ img {
     max-width: 600px;
     margin: 0 auto;
   }
+
+  .img__desktop-container {
+    max-width: 50%;
+  }
   
   .img__desktop {
     display: block;
