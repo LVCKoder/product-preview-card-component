@@ -38,7 +38,6 @@ img {
 }
 
 .content__container {
-  margin: 0 auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -132,7 +131,7 @@ img {
   }
 
   .content__container {
-    max-width: 45%;
+    max-width: 50%;
     gap: 2rem;
   }
 }
